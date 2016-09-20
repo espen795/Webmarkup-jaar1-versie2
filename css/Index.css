@@ -416,20 +416,20 @@ html
 body
 {
 	background-color: #fff;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin:0 auto;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding : 0;
 	border : 0;
 	height: 100%;
+	width: 1500px;
 }
 
 header
 {
 	/* Hier staat de h1 pagina titel in en het logo */
 	height: 4vw;
-	background-color: #A01818;
+	background-color: #701818;
 	position: relative;
 	margin: 0;
 	padding : 0;
@@ -471,7 +471,23 @@ nav li a
 	display: inline-block;     
 	position: relative;
 	font-size: 0.7vw;	
-	padding-top: 1vh;
+	padding-top: 0.8vh;
+	z-index: 1;     
+	height: 80%;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	border-right: 2px solid #fff;
+	cursor: pointer;
+}
+
+nav li a:hover
+{
+	display: inline-block;
+	background-color: #111;
+	position: relative;
+	font-size: 0.7vw;	
+	padding-top: 0.8vh;
 	z-index: 1;     
 	height: 80%;
 	width: 100%;
@@ -605,6 +621,12 @@ h6
 	white-space: pre-line;
 	position: absolute;
 	bottom: 5%;
+}
+
+#currentpage
+{
+	color: #fff;
+	background-color: #930;
 }
 
 p
