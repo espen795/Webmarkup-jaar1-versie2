@@ -1,0 +1,250 @@
+html
+{
+	background-color: #ddd;
+	margin : 0;
+	padding : 0;
+	border : 0;
+	height: 100%;
+	font-family: verdana;
+	
+}
+
+body
+{
+	background-color: #fff;
+	margin:0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding : 0;
+	border : 0;
+	height: 100%;
+	width: 1500px;
+}
+
+header
+{
+	/* Hier staat de h1 pagina titel in en het logo */
+	height: 4vw;
+	background-color: #701818;
+	position: relative;
+	margin: 0;
+	padding : 0;
+	border : 0;
+}
+
+nav
+{
+	position: relative;
+	display: block;
+	height: 4%;
+	width: 100%;
+	background: #333;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+nav ul li
+{
+	margin-top: 0px;
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+}
+
+nav li a
+{
+	display: inline-block;     
+	position: relative;
+	font-size: 0.7vw;	
+	padding-top: 0.8vh;
+	z-index: 1;     
+	height: 80%;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	border-right: 2px solid #fff;
+	cursor: pointer;
+}
+
+nav li a:hover
+{
+	display: inline-block;
+	background-color: #111;
+	position: relative;
+	font-size: 0.7vw;	
+	padding-top: 0.8vh;
+	z-index: 1;     
+	height: 80%;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	border-right: 2px solid #fff;
+	cursor: pointer;
+}
+
+main
+{
+	border : 0;	
+	position: relative;
+	min-height: 85%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+aside
+{
+	padding-top: 20px;
+}
+
+table
+{
+	border: 1px solid black;
+	margin-top: 40px;
+	width: 60%;
+	border-collapse: collapse;
+}
+
+th
+{
+	border-bottom: 2px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+td
+{
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: left;
+}
+
+.tr1:hover 
+{
+	/* verzorgd de kleurverandering van de onderste tabel, maar niet de bovenste met titels */
+	background-color: #f5f5f5
+}
+
+#html5img 
+{
+    height: 200px;
+    width: 200px;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+/* Hier onder alle formaten headers */
+h1
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 34px;
+}
+
+h2
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 30px;
+}
+
+h3
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 26px;
+}
+
+h4
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 22px;
+}
+
+h5
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+h6
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 16px;
+}
+
+#headerh1
+{
+	position: relative;
+	text-align: center;
+	padding-top: 1vw;
+	margin: 0;
+	font-size: 1.3vw;
+}
+
+#headerimg
+{
+    height: 3vw;
+    width: 4.622vw;
+	position: absolute;
+	left: 1.5vw;
+	top: 0.5vw;
+}
+
+#links
+{
+	/* Dit zijn de links in de footer, pre-line verzorgd de nieuwe lijnen per link */
+	white-space: pre-line;
+	position: absolute;
+	bottom: 5%;
+}
+
+#currentpage
+{
+	color: #fff;
+	background-color: #930;
+}
+
+p
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+em
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;	
+}
+
+strong
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;	
+}
