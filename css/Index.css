@@ -5,8 +5,8 @@ html
 	padding : 0;
 	border : 0;
 	height: 100%;
-	font-family: verdana;
-	
+	font-family: SanSerif;
+	font-size: 18px;
 }
 
 body
@@ -18,7 +18,8 @@ body
 	padding : 0;
 	border : 0;
 	height: 100%;
-	width: 1500px;
+	width: 100%;
+	max-width: 1500px;
 }
 
 header
@@ -37,7 +38,9 @@ nav
 	position: relative;
 	display: block;
 	height: 4%;
-	width: 1500px;
+	min-height: 35px;
+	width: 100%;
+	max-width: 1500px;
 	background: #333;
 }
 
@@ -47,9 +50,9 @@ nav ul
 	padding: 0;
 	display: block;
 	position: relative;
-	float: top;
 	width: 100%;
 	height: 100%;
+	min-height: 35px;
 }
 
 nav ul li
@@ -60,6 +63,7 @@ nav ul li
 	display: inline-block;
 	width: 18%;
 	height: 100%;
+	min-height: 35px;
 	text-align: center;
 }
 
@@ -67,15 +71,18 @@ nav li a
 {
 	display: inline-block;     
 	position: relative;
-	font-size: 0.6vw;	
+	font-size: 1.1em;	
 	padding-top: 1.38vh;
 	z-index: 1;     
 	height: 64%;
+	min-height: 30px;
 	width: 100%;
 	color: #fff;
 	text-decoration: none;
 	border-right: 2px solid #fff;
 	cursor: pointer;
+	border-collapse: separate;
+    border-spacing: 0px;
 }
 
 nav li a:hover
@@ -83,15 +90,25 @@ nav li a:hover
 	display: inline-block;
 	background-color: #111;
 	position: relative;
-	font-size: 0.6vw;	
+	font-size: 1.1em;
 	padding-top: 1.38vh;
 	z-index: 1;     
 	height: 64%;
+	min-height: 30px;
 	width: 100%;
 	color: #fff;
 	text-decoration: none;
 	border-right: 2px solid #fff;
 	cursor: pointer;
+	border-collapse: separate;
+    border-spacing: 0px;
+}
+
+#currentpage
+{
+	height: 100%;
+	border-bottom: 5px solid #930;
+	box-sizing: border-box;
 }
 
 main
@@ -142,7 +159,7 @@ td
     width: 200px;
 	position: absolute;
 	right: 5%;
-	bottom: 5%;
+	bottom: 10%;
 }
 
 /* Hier onder alle formaten headers */
@@ -150,57 +167,54 @@ h1
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 34px;
+	font-size: 1.8em;
 }
 
 h2
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 30px;
+	font-size: 1.6em;
 }
 
 h3
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 26px;
+	font-size: 1.4em;
 }
 
 h4
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 22px;
+	font-size: 1.3em;
 }
 
 h5
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 h6
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 16px;
+	font-size: 1.1em;
 }
 
 #headerh1
 {
-	position: relative;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 	text-align: center;
-	padding-top: 1vw;
-	margin: 0;
-	font-size: 1.3vw;
+	display: block;
+	vertical-align: middle;
+	font-size: 2em;
+	color: #fff;
 }
 
 #headerimg
@@ -216,36 +230,58 @@ h6
 {
 	/* Dit zijn de links in de footer, pre-line verzorgd de nieuwe lijnen per link */
 	white-space: pre-line;
-	position: absolute;
-	bottom: 5%;
+	position: relative;
+	bottom: 0%;
 }
 
-#currentpage
+.vanish
 {
-	color: #fff;
-	background-color: #930;
+	display: none;
+}
+
+.center
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border: 0px solid #fff;
 }
 
 p
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 14px;
 }
 
 em
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 14px;	
+	white-space: pre-line;	
 }
 
 strong
 {
 	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 14px;	
+	white-space: pre-line;
+	text-align: left;	
 }
+
+.flexbox
+{
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: flex;
+    flex-direction: row;
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.flexbox > section {width: 80px; height: 80px; margin: auto;}
+.flexbox > section:nth-child(1) {background-color: red;}
+.flexbox > section:nth-child(2) {background-color: green;}
+.flexbox > section:nth-child(3) {background-color: blue;}
