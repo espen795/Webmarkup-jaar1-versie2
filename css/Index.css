@@ -21,7 +21,7 @@ body
 	border : 0;
 	height: 100%;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1200px;
 	z-index: -90;
 }
 
@@ -193,25 +193,24 @@ aside
 	z-index: 0;
 }
 
+/* Hieronder alle onderdelen voor de opmaak vd links*/
 #homelinks
 {
 	width: 90%;
-	height: 100vh;
+	height: 80vh;
 	min-width: 700px;
-	min-height: 400px;
-	background-color: #000;
+	min-height: 700px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 /* Homepage pagina links featured container */
 #topleft, #topright, #bottomleft, #bottomright
 {
-	width: 40%;
+	width: 45%;
 	height: 46%;
-	background-color: #F00;
 	position: relative;
 	margin-top: 3vh;
 	z-index: 10;
@@ -220,33 +219,46 @@ aside
 #topleft, #bottomleft
 {
 	float: left;
-	margin-left: 6%;
+	margin-left: 3%;
 }
 
 #topright, #bottomright
 {
 	float: right;
-	margin-right: 6%;
+	margin-right: 3%;
 }
 
 #homelinks header
 {
-	width: 50%;
-	height: 50%;
+	width: 90%;
+	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #0F0;
 	position: relative;
-	margin-top: 2vh;
+	margin-top: 1.6vh;
 	z-index: 15;
+	background-color: #fff;
+}
+
+#homelinks img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
 }
 
 #homelinks p
 {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	text-align: center;
-	padding-left: 10px;
-	padding-right: 10px;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
 	overflow: hidden;
+	margin-top: 18%;
 }
 
 /* Hier onder alle formaten headers */
