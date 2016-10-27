@@ -1,16 +1,17 @@
+/* ============================================================================================================================================*/
+/* ======================================================= Algemene layout alle pagina's ======================================================*/
+/* ============================================================================================================================================*/
 html
 {
 	background-color: #ddd;
 	margin : 0;
 	padding : 0;
 	border : 0;
-	height: 100%;
-	font-family: SanSerif;
+	font-family: sans-serif;
 	font-size: 18px;
-	min-height: 2450px;
 	z-index: -100;
 }
-
+	
 body
 {
 	background-color: #fff;
@@ -25,18 +26,55 @@ body
 	z-index: -90;
 }
 
+main
+{
+	border : 0;	
+	position: relative;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: -4px;
+	margin-bottom: 0;
+}
+
+
+/* Alles in de header */
+#headerh1
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: block;
+	vertical-align: middle;
+	font-size: 2em;
+	color: #fff;
+}
+
+#headerimg
+{
+    height: 3vw;
+	min-height: 130px;
+	margin-top: -35px;
+	margin-left: -10px;
+	position: absolute;
+	left: 1.5%;
+	top: 14%;
+}
+
 header
 {
 	/* Hier staat de h1 pagina titel in en het logo */
 	height: 4vw;
 	min-height: 80px;
-	background-color: #701818;
+	background-color: #005578;
 	position: relative;
 	margin: 0;
 	padding : 0;
 	border : 0;
 }
+/* Einde header */
 
+/* De navigatie balk */
 nav
 {
 	margin: 0;
@@ -74,8 +112,6 @@ nav ul li
 	padding : 0;
 	border : 0;
 	overflow: hidden;
-	/* list-style-type: none; */
-	/* display: inline-block; */
 	float: left;
 	width: 14.286%;
 	min-width: 80px;
@@ -90,8 +126,8 @@ nav li a
 	display: block;
 	overflow: hidden;
 	position: relative;
-	font-size: 1.1em;	
-	padding-top: 1.4vh;
+	font-size: 1em;	
+	padding-top: 9%;
 	z-index: 10;     
 	height: 100%;
 	min-height: 25px;
@@ -123,126 +159,57 @@ nav li a:hover
 {
 	border-right: 0;
 }
+/* Einde navigatie balk */
 
-main
+
+/* De footer */
+footer
 {
-	border : 0;	
-	position: relative;
-	min-height: 2300px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-top: -4px;
-	margin-bottom: 0;
+	width: 95%;
+	background: #333;
+	height: 5vh;
+	height: 45px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
-aside
+footer a img
 {
-	
+	height: 80%;
+	float: left;
+	margin-left: 3%;
+	padding-top: 0.5%;
 }
 
-#introimg
+#footerfirst
 {
-	vertical-align: top;
-	min-width: 100%;
-	height: 10%;
-	margin: -6px 0 0 0;
-	z-index: 0;
-	
+	margin-left: 5%;
 }
 
-#map
-{
-	vertical-align: top;
-	width: 100%;
-	height: 10%;
-	margin: 80px 0 0 0;
-	z-index: 0;
+footer section a
+{ 
+	color: #fff;
+	text-decoration: none;
+	float: right;
+	margin-top: 12px;
 }
 
-#introimg img
-{
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	z-index: 0;
+footer section a:first-child
+{ 
+	float: left;
 }
 
-#map img
+footer section
 {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	z-index: 0;
-}
-
-/* Hieronder alle onderdelen voor de opmaak vd links*/
-#homelinks
-{
-	width: 90%;
-	height: 80vh;
-	min-width: 700px;
-	min-height: 700px;
-	position: relative;
+	height: 100%;
+	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
 }
+/* einde footer */
 
-/* Homepage pagina links featured container */
-#topleft, #topright, #bottomleft, #bottomright
-{
-	width: 45%;
-	height: 47%;
-	min-height: 380px;
-	position: relative;
-	margin-top: 2.5vw;
-	z-index: 10;
-}
 
-#topleft, #bottomleft
-{
-	float: left;
-	margin-left: 1.5%;
-}
-
-#topright, #bottomright
-{
-	float: right;
-	margin-right: 1.5%;
-}
-
-#homelinks img
-{
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	z-index: 0;
-}
-
-#homelinks p
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	text-align: center;
-	overflow: hidden;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-#homelinks h3
-{
-	text-align: center;
-	margin-top: 6px;
-	margin-bottom: 0px;
-}
-
-#homelinks section:hover
-{
-	background-color: #eee;
-}
-
-/* Hier onder alle formaten headers */
+/* Hier onder alle formaten titels */
 h1
 {
 	color: black;
@@ -284,30 +251,10 @@ h6
 	text-align: left;
 	font-size: 1.1em;
 }
+/* Einde titels */
 
-#headerh1
-{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	display: block;
-	vertical-align: middle;
-	font-size: 2em;
-	color: #fff;
-}
 
-#headerimg
-{
-    height: 3vw;
-	min-height: 130px;
-	margin-top: -35px;
-	margin-left: -10px;
-	position: absolute;
-	left: 1.5%;
-	top: 14%;
-}
-
+/* Algemene opmaak */
 .vanish
 {
 	display: none;
@@ -343,3 +290,134 @@ strong
 	white-space: pre-line;
 	text-align: left;	
 }
+/* Einde algemene opmaak */
+
+
+
+/* ============================================================================================================================================*/
+/* ======================================================= Specifieke layout per pagina =======================================================*/
+/* ============================================================================================================================================*/
+
+
+/* -------------------------------------------- CSS voor homepage ------------------------------------------------*/
+#introimg
+{
+	vertical-align: top;
+	min-width: 100%;
+	height: 10%;
+	margin: -6px 0 0 0;
+	z-index: 0;
+	
+}
+
+#map
+{
+	vertical-align: top;
+	width: 100%;
+	height: 10%;
+	margin: 80px 0 0 0;
+	z-index: 0;
+}
+
+#introimg img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
+}
+
+#map img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
+}
+
+/* Hieronder alle onderdelen voor de opmaak vd links*/
+#homelinks
+{
+	width: 90%;
+	height: 50vw;
+	min-width: 700px;
+	min-height: 900px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+/* Homepage pagina links featured container */
+#topleft, #topright, #bottomleft, #bottomright
+{
+	width: 45%;
+	height: 45%;
+	min-height: 340px;
+	min-width: 300px;
+	position: relative;
+	margin-top: 1vw;
+	z-index: 10;
+}
+
+#topleft, #bottomleft
+{
+	float: left;
+	margin-left: 1.5%;
+}
+
+#topright, #bottomright
+{
+	float: right;
+	margin-right: 1.5%;
+}
+
+#homelinks img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
+}
+
+#homelinks p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 1em;
+}
+
+#homelinks h3
+{
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	font-size: 1em;
+}
+
+#homelinks section:hover
+{
+	background-color: #eee;
+}
+/* ----------------------------------------------- Home pagina einde --------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor detail pagina ------------------------------------------------*/
+/* ----------------------------------------------- Detail pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor contact pagina ------------------------------------------------*/
+/* ----------------------------------------------- Contact pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor about pagina ------------------------------------------------*/
+/* ----------------------------------------------- About pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor bronnen pagina ------------------------------------------------*/
+/* ----------------------------------------------- Bronnen pagina einde ------------------------------------------------*/
