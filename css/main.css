@@ -75,7 +75,7 @@ header
 /* Einde header */
 
 /* De navigatie balk */
-nav
+body>nav
 {
 	margin: 0;
 	padding : 0;
@@ -90,7 +90,7 @@ nav
 	z-index: 7;
 }
 
-nav ul
+body>nav ul
 {
 	margin: 0;
 	padding : 0;
@@ -105,7 +105,7 @@ nav ul
 	z-index: 8;
 }
 
-nav ul li
+body>nav ul li
 {
 	margin: 0;
 	margin-left: 0;
@@ -121,7 +121,7 @@ nav ul li
 	z-index: 9;
 }
 
-nav li a
+body>nav li a
 {
 	display: block;
 	overflow: hidden;
@@ -143,7 +143,7 @@ nav li a
 	box-sizing: border-box;
 }
 
-nav li a:hover
+body>nav li a:hover
 {
 	background-color: #111;
 }
@@ -186,7 +186,7 @@ footer a img
 	margin-left: 5%;
 }
 
-footer section a
+footer>nav a
 { 
 	color: #fff;
 	text-decoration: none;
@@ -194,12 +194,12 @@ footer section a
 	margin-top: 12px;
 }
 
-footer section a:first-child
+footer>nav a:first-child
 { 
 	float: left;
 }
 
-footer section
+footer>nav
 {
 	height: 100%;
 	width: 30%;
@@ -307,7 +307,6 @@ strong
 	height: 10%;
 	margin: -6px 0 0 0;
 	z-index: 0;
-	
 }
 
 #map
@@ -317,6 +316,13 @@ strong
 	height: 10%;
 	margin: 80px 0 0 0;
 	z-index: 0;
+}
+
+#map>h1
+{
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: -20px;
 }
 
 #introimg img
@@ -339,13 +345,18 @@ strong
 #homelinks
 {
 	width: 90%;
-	height: 50vw;
 	min-width: 700px;
-	min-height: 900px;
+	height: 950px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
+	margin-top: 50px;
+}
+
+#homelinks>h1
+{
+	text-align: center;
+	margin-bottom: 3px;
 }
 
 /* Homepage pagina links featured container */
@@ -397,7 +408,7 @@ strong
 	text-align: center;
 	margin-top: 6px;
 	margin-bottom: 0px;
-	font-size: 1em;
+	font-size: 1.3em;
 }
 
 #homelinks section:hover
@@ -408,6 +419,108 @@ strong
 
 
 /* -------------------------------------------- CSS voor detail pagina ------------------------------------------------*/
+#contentbox
+{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-color: #f00;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#contentbox h2
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 25vw;
+}
+
+#contentbox p
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 25vw;
+}
+
+#contentbox img
+{
+	clear: both;
+	float: right;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 25vw;
+}
+
+#botimg
+{
+
+}
+
+div
+{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: #111;
+	z-index: 0;
+}
+
+#div1
+{
+	position: relative;
+	width: 10%;
+	height: 200px;
+	background-color: #00f;
+	border: 0;
+	float: left;
+	float: top;
+	z-index: 100;
+}
+
+#div2
+{
+	position: relative;
+	width: 10%;
+	height: 200px;
+	background-color: #f00;
+	border: 0;
+	float: right;
+	float: top;
+	z-index: 100;
+}
+
+#div3
+{
+	position: relative;
+	width: 10%;
+	height: 200px;
+	background-color: #0f0;
+	border: 0;
+	float: left;
+	float: bottom;
+	z-index: 100;
+	clear:both
+}
+
+#div4
+{
+	position: relative;
+	width: 10%;
+	height: 200px;
+	background-color: #f0f;
+	border: 0;
+	float: right;
+	float: down;
+	z-index: 100;
+}
 /* ----------------------------------------------- Detail pagina einde ------------------------------------------------*/
 
 
