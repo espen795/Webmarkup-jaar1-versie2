@@ -38,16 +38,28 @@ main
 
 
 /* Alles in de header */
+header
+{
+	/* Hier staat de h1 pagina titel in en het logo */
+	height: 90px;
+	background-color: #005578;
+	position: relative;
+	margin: 0;
+	padding : 0;
+	border : 0;
+}
+
 #headerh1
 {
-	position: absolute;
-	height: 100%;
+	position: relative;
+	display: inline-block;
 	width: 100%;
+	height: 100%;
 	text-align: center;
-	display: block;
 	vertical-align: middle;
 	font-size: 2em;
 	color: #fff;
+	margin: 25px 0 0 0;
 }
 
 #headerimg
@@ -61,17 +73,6 @@ main
 	top: 14%;
 }
 
-header
-{
-	/* Hier staat de h1 pagina titel in en het logo */
-	height: 4vw;
-	min-height: 80px;
-	background-color: #005578;
-	position: relative;
-	margin: 0;
-	padding : 0;
-	border : 0;
-}
 /* Einde header */
 
 /* De navigatie balk */
@@ -82,8 +83,7 @@ body>nav
 	border : 0;
 	position: relative;
 	display: inline-block;
-	height: 2.5vw;
-	min-height: 35px;
+	height: 50px;
 	width: 100%;
 	max-width: 1500px;
 	background: #333;
@@ -108,12 +108,13 @@ body>nav ul
 body>nav ul li
 {
 	margin: 0;
-	margin-left: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding : 0;
 	border : 0;
 	overflow: hidden;
 	float: left;
-	width: 14.286%;
+	width: 14.28%;
 	min-width: 80px;
 	height: 100%;
 	min-height: 35px;
@@ -127,7 +128,7 @@ body>nav li a
 	overflow: hidden;
 	position: relative;
 	font-size: 1.15em;	
-	padding-top: 9%;
+	padding-top: 15px;
 	z-index: 10;     
 	height: 100%;
 	min-height: 25px;
@@ -152,7 +153,6 @@ body>nav li a:hover
 {
 	height: 100%;
 	border-bottom: 5px solid #930;
-	box-sizing: border-box;
 }
 
 #mostright
@@ -176,15 +176,15 @@ body>footer
 
 body>footer a img
 {
-	height: 80%;
+	height: 70%;
 	float: left;
 	margin-left: 3%;
-	padding-top: 0.5%;
+	padding-top: 0.65%;
 }
 
 #footerfirst
 {
-	margin-left: 5%;
+	margin-left: 4.5%;
 }
 
 body>footer>nav a
@@ -326,7 +326,7 @@ strong
 	z-index: 0;
 }
 
-#map>h1
+#map>h2
 {
 	text-align: center;
 	margin-bottom: 20px;
@@ -361,7 +361,7 @@ strong
 	margin-top: 50px;
 }
 
-#homelinks>h1
+#homelinks>h2
 {
 	text-align: center;
 	margin-bottom: 3px;
@@ -518,6 +518,180 @@ strong
 
 
 /* -------------------------------------------- CSS voor contact pagina ------------------------------------------------*/
+#contactform>h2
+{
+	text-align: center;
+	margin-top: 60px;
+}
+
+form
+{
+	width: 90%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Maakt het iets leesbaarder op een kleiner scherm*/
+@media screen and (max-width: 1200px) 
+{
+	form
+	{
+	width: 100%;
+	}
+}
+
+.onderwerp
+{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+.required
+{
+	display: inline-block;
+	cursor: default;
+	text-align: left;
+	font-size: 1.5em;
+	margin-top: -6px;
+	margin-right: -18px;
+	color: #930;
+	font-weight: 900;
+	vertical-align: top;
+}
+
+/* de radio buttons */
+
+.radioin
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -15px;
+}
+
+.radioin>p
+{
+	position: relative;
+	margin: 0;
+	float: right;
+	width: 64.7%;
+}
+
+.radioin>p>span
+{
+	padding-bottom: 15px;
+	position: relative;
+	display: inline-block;
+	width: 90%;
+}
+
+.radioin span>label
+{
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+input[type=radio]
+{
+	display: none;
+	width: 19px;
+	height: 19px;
+	z-index: 100;
+}
+
+.radioin span>label:before 
+{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0.5px;
+	top: 0.5px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radioin label:before
+{
+  border-radius: 8px;
+}
+
+input[type="radio"]:checked + label:before {
+    content: "\2022";
+    color: #930;
+    font-size: 40px;
+    text-align: center;
+    line-height: 16.8px;
+}
+
+/* einde radio buttons */
+
+/* de invoervelden */
+form>label
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-top: 25px;
+}
+
+form>label input
+{
+	position: relative;
+	background-color: #eee;
+	border: 2px solid #bbb;
+	margin: 0;
+	width: 48%;
+	margin-left: 5%;
+	padding: 2px 0px 2px 5px;
+	font-size: 1em;
+}
+
+form>label .inputsmall
+{
+	width: 23%;
+}
+
+form>label .inputnormal
+{
+	width: 34.5%;
+}
+
+form>label .inputlarge
+{
+	width: 46%;
+}
+
+#onderwerpbox
+{
+	margin-top: 50px;
+}
+
+#berichtbox>textarea
+{
+	resize: vertical;
+	margin-left: 5%;
+	padding: 2px 0px 2px 5px;
+	font-size: 1em;
+	background-color: #eee;
+	border: 2px solid #bbb;
+}
+/* einde invoervelden */
+
+#currentpage_footer
+{
+	height: 40%;
+	border-bottom: 4px solid #930;
+	box-sizing: initial;
+}
+
 /* ----------------------------------------------- Contact pagina einde ------------------------------------------------*/
 
 
