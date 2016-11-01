@@ -159,6 +159,13 @@ body>nav li a:hover
 {
 	border-right: 0;
 }
+
+#mostright_currentpage
+{
+	height: 100%;
+	border-bottom: 5px solid #930;
+	border-right: 0;
+}
 /* Einde navigatie balk */
 
 
@@ -448,10 +455,11 @@ strong
 {
 	text-align: left;
 	margin-top: 0px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	width: 48%;
 	clear: both;
 	float: left;
+	font-size: 1.5em;
 }
 
 .contentbox>aside
@@ -481,6 +489,7 @@ strong
 	clear: both;
 	float: left;
 	overflow: hidden;
+	bottom: 0;
 }
 
 .contentbox>p span
@@ -489,18 +498,16 @@ strong
 	display: inline-block;
 	clear: both;
 	overflow: hidden;
+	width: 100%;
 }
 
-.contentbox>footer
+.tekstversie>footer
 {
-	margin-top: 20px;
-	width: 48%;
-	clear: both;
-	float: left;
-	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
-.contentbox>footer>a
+.contentbox a
 {
 	background-color: #777;
 	border: 3px solid #ddd;
@@ -508,17 +515,25 @@ strong
 	color: #fff;
 	display: inline-block;
 	text-align: center;
-	line-height: 33px;
+	line-height: 30px;
 	padding: 0 15px 0 15px;
-	height: 33px;
+	height: 30px;
+	margin-top: 20px;
 }
 
-.contentbox.reversed>h2, .contentbox.reversed>p, .contentbox.reversed>footer
+.contentbox.reversed>h2, .contentbox.reversed>p
 {
 	margin-right: 0;
 	margin-left: auto;
 	float: right;
 	clear: none;
+}
+
+.contentbox.reversed>footer
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .contentbox.reversed>aside
@@ -527,6 +542,55 @@ strong
 	margin-right: 4%;
 }
 
+main>.tekstversie p, main>.tekstversie h2, main>.tekstversie span
+{
+	width: 100%;
+}
+
+#contenthoreca>h2, #contenttedoen>h2
+{
+	text-align: center;
+	margin-bottom: -40px;
+	margin-top: 40px;
+}
+
+.kop
+{
+	font-size: 1.05em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#contenthoreca table
+{
+	width: 50%;
+	min-width: 400px;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+.hrmarg
+{
+	margin-bottom: -40px;
+}
+
+#contenthoreca table th
+{
+	padding-bottom: 10px;
+}
+
+#contenthoreca table td:first-child
+{
+	width: 80%;
+}
+
+#contenthoreca table a
+{
+	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+}
 
 /* ----------------------------------------------- Detail pagina einde ------------------------------------------------*/
 
@@ -762,6 +826,7 @@ form>label .inputlarge
 	text-align: center;
 	margin-top: 0px;
 	padding-top: 60px;
+	font-size: 1.7em;
 }
 
 /* einde invoervelden */
