@@ -7,11 +7,11 @@
 		<meta name="keywords" content="Haarlem Oost, Haarlem, Oost, Informatie, Natuur, Horeca, Historie, Te doen, Bereikbaarheid, Amsterdamse poort, Mooie Nel, Veerplas, Veerpolder, Waarderpolder, Zuidam, Restaurant, Hotel, Molen, Adriaan, Varen">
 		<meta name="author" content="Espen Lindhout">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" media="(max-width: 600px)" href="css/phone.css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/phone.css">
 		
-		<title>Haarlem Oost natuur</title>
+		<title>Haarlem Oost contact</title>
 	</head>
 	
 
@@ -31,7 +31,7 @@
 		<nav>
 			<ul>
 				<li>
-				<a href="index.html">Home</a>
+				<a href="index.html" id="mostleft">Home</a>
 				</li>
 				
 				<li>
@@ -55,7 +55,7 @@
 				</li>
 				
 				<li>
-				<a id="mostright" href="bereikbaar.html">Bereikbaar</a>
+				<a href="bereikbaar.html">Bereikbaar</a>
 				</li>
 			</ul>
 		</nav>
@@ -67,7 +67,7 @@
 			<!-- ================================== Contact pagina =================================== -->
 			
 			<h2>
-			Contact Us!
+			Contact us!
 			</h2>
 			
 			<form action="succes.html" method="get">
@@ -104,7 +104,7 @@
 					
 					<span class="required">*</span>
 					
-					<input class="inputsmall" type="text" name="naam" placeholder="Bijv. Jan Jansen" required />					
+					<input class="inputsmall" type="text" name="naam" placeholder="Bijv. Jan Jansen" pattern="[a-zA-ZÀ-ž]+[a-zA-ZÀ-ž\s]{5,20}" required />					
 				</label>
 				
 				<label>
@@ -130,7 +130,7 @@
 					Website adres:
 					</span>
 					
-					<input class="inputnormal" type="url" name="url" placeholder="Bijv. www.restaurantzuidam.nl" />					
+					<input class="inputnormal" type="url" name="url" placeholder="Bijv. http://www.restaurantzuidam.nl/" />					
 				</label>
 				
 				<label id="onderwerpbox">
@@ -140,7 +140,7 @@
 					
 					<span class="required">*</span>
 					
-					<input class="inputlarge" type="text" name="onderwerp" placeholder="Bijv. Locatie gewijzigd restaurant." required />
+					<input class="inputlarge" type="text" name="onderwerp" pattern="([a-zA-Z0-9À-ž\s]){4,}" placeholder="Bijv. Locatie gewijzigd restaurant." required />
 				</label>
 				
 				<label id="berichtbox">
@@ -150,7 +150,7 @@
 					
 					<span class="required">*</span>
 					
-					<textarea class="inputlarge" rows="10" name="bericht" placeholder="Bijv. Het adres van restaurant Zuidam is gewijzigd, graag dit aanpassen op de website." required></textarea>
+					<textarea class="inputlarge" rows="10" name="bericht" pattern="([a-zA-Z0-9À-ž\s]){10,}" placeholder="Bijv. Het adres van restaurant Zuidam is gewijzigd, graag dit aanpassen op de website." required></textarea>
 				</label>
 			
 				<p class="requiredfield"><span class="required">*</span> verplichte invoervelden</p>

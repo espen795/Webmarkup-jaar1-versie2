@@ -40,7 +40,6 @@ main
 /* Alles in de header */
 header
 {
-	/* Hier staat de h1 pagina titel in en het logo */
 	height: 90px;
 	background-color: #005578;
 	position: relative;
@@ -135,7 +134,7 @@ body>nav li a
 	width: 100%;
 	color: #fff;
 	text-decoration: none;
-	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
 	cursor: pointer;
 	margin: 0;
 	padding-left: 0;
@@ -153,18 +152,19 @@ body>nav li a:hover
 {
 	height: 100%;
 	border-bottom: 5px solid #930;
+	z-index: 8;
 }
 
-#mostright
+#mostleft
 {
-	border-right: 0;
+	border-left: 0;
 }
 
-#mostright_currentpage
+#mostleft_currentpage
 {
 	height: 100%;
 	border-bottom: 5px solid #930;
-	border-right: 0;
+	border-left: 0;
 }
 /* Einde navigatie balk */
 
@@ -213,6 +213,7 @@ body>footer>nav
 	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 
 #currentpage_footer
@@ -236,7 +237,7 @@ h2
 {
 	color: black;
 	text-align: left;
-	font-size: 1.6em;
+	font-size: 1.7em;
 }
 
 h3
@@ -267,36 +268,26 @@ h6
 	font-size: 1.1em;
 }
 
-.pagetitle
-{
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: -45px;
-}
 /* Einde titels */
 
 
 /* Algemene opmaak */
-.vanish
+hr
 {
-	display: none;
-}
-
-.center
-{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	border: 0px solid #fff;
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: -30px;
 }
 
 p
 {
 	color: black;
 	text-align: left;
+	font-size: 1em;
 }
 
 em
@@ -311,6 +302,11 @@ strong
 	color: black;
 	white-space: pre-line;
 	text-align: left;	
+}
+
+img
+{
+	border: 0;
 }
 /* Einde algemene opmaak */
 
@@ -367,13 +363,30 @@ strong
 #homelinks
 {
 	width: 90%;
-	min-width: 700px;
+	min-width: 500px;
 	height: 950px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
 }
+
+	/* Verbeterd de schaalbaarheid */
+	@media screen and (max-width: 1000px) 
+	{
+		#homelinks
+		{
+		height: 800px;
+		}
+	}
+
+	@media screen and (max-width: 800px) 
+	{
+		#homelinks
+		{
+		height: 700px;
+		}
+	}
 
 #homelinks>h2
 {
@@ -387,7 +400,7 @@ strong
 	width: 45%;
 	height: 45%;
 	min-height: 340px;
-	min-width: 300px;
+	min-width: 100px;
 	position: relative;
 	margin-top: 1vw;
 	z-index: 10;
@@ -437,6 +450,11 @@ strong
 {
 	background-color: #eee;
 }
+
+#homepage>footer
+{
+	margin-top: 20px;
+}
 /* ----------------------------------------------- Home pagina einde --------------------------------------------------*/
 
 
@@ -485,7 +503,9 @@ strong
 .contentbox>p
 {
 	margin-top: -10px;
+	font-size: 1em;
 	width: 48%;
+	min-width: 200px;
 	clear: both;
 	float: left;
 	overflow: hidden;
@@ -499,12 +519,6 @@ strong
 	clear: both;
 	overflow: hidden;
 	width: 100%;
-}
-
-.tekstversie>footer
-{
-	margin-top: 10px;
-	margin-bottom: 30px;
 }
 
 .contentbox a
@@ -529,13 +543,6 @@ strong
 	clear: none;
 }
 
-.contentbox.reversed>footer
-{
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 .contentbox.reversed>aside
 {
 	float: left;
@@ -547,11 +554,11 @@ main>.tekstversie p, main>.tekstversie h2, main>.tekstversie span
 	width: 100%;
 }
 
-#contenthoreca>h2, #contenttedoen>h2
+#contenthoreca>h2, #contenttedoen>h2, #contentsport>h2, #contentbereikbaar>h2
 {
 	text-align: center;
 	margin-bottom: -40px;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .kop
@@ -568,11 +575,6 @@ main>.tekstversie p, main>.tekstversie h2, main>.tekstversie span
 	text-align: left;
 	padding-top: 15px;
 	padding-bottom: 40px;
-}
-
-.hrmarg
-{
-	margin-bottom: -40px;
 }
 
 #contenthoreca table th
@@ -631,15 +633,6 @@ form
 #sendbutton:active
 {
 	background-color: #555;
-}
-
-/* Maakt het iets leesbaarder op een kleiner scherm*/
-@media screen and (max-width: 1200px) 
-{
-	form
-	{
-	width: 100%;
-	}
 }
 
 .onderwerp
@@ -713,6 +706,7 @@ input[type=radio]
 	width: 17px;
 	height: 17px;
 	position: absolute;
+	margin: 0;
 }
 
 .radioin span>label:before 
@@ -793,26 +787,28 @@ form>label .inputlarge
 	background-color: #eee;
 	border: 2px solid #bbb;
 }
+/* einde invoervelden */
 
+/* Succes pagina */
 #contactsucces
 {
-	margin: 0;
 	padding: 0;
 	border: 0;
 	position: absolute;
 	width: 100%;
-	height: 928px;
+	height: 116%;
 	display: inline-block;
+	margin: -4% 0 0 0;
 	background-color: rgba(100, 100, 100, 0.85);
-	z-index: 150;
+	z-index: 6;
 }
 
 #contactsucces>span
 {
 	position: relative;
-	width: 50%;
-	height: 16%;
-	margin: 30% auto auto 25%;
+	width: 40%;
+	height: 15%;
+	margin: 30% auto auto 30%;
 	display: inline-block;
 	background-color: #fff;
 	border: 3px solid #930;
@@ -828,8 +824,31 @@ form>label .inputlarge
 	padding-top: 60px;
 	font-size: 1.7em;
 }
+/* Einde succes pagina */
 
-/* einde invoervelden */
+/* Maakt het iets leesbaarder op een kleiner scherm*/
+@media screen and (max-width: 1000px) 
+{
+	form
+	{
+	width: 100%;
+	}
+	
+	form>label>.inputsmall
+	{
+		width: 30%;
+	}
+
+	form>label>.inputnormal
+	{
+		width: 40%;
+	}
+
+	form>label>.inputlarge
+	{
+		width: 50%;
+	}
+}
 
 /* ----------------------------------------------- Contact pagina einde ------------------------------------------------*/
 
@@ -877,7 +896,7 @@ form>label .inputlarge
 	clear: right;
 }
 
-.aboutimg
+.aboutimg, .aboutimg1
 {
 	width: 62%;
 	display: inline-block;
@@ -963,7 +982,12 @@ form>label .inputlarge
 #bronnenpage table
 {
 	margin-top: 80px;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 	width: 100%;
+}
+
+#bronnenpage td
+{
+	height: 1em;
 }
 /* ----------------------------------------------- Bronnen pagina einde ------------------------------------------------*/

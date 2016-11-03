@@ -1,236 +1,113 @@
+/* ============================================================================================================================================*/
+/* ======================================================= Algemene layout alle pagina's ======================================================*/
+/* ============================================================================================================================================*/
 html
 {
-	background-color: #fff;
-	margin : 0;
-	padding : 0;
-	border : 0;
-	height: 100%;
-	font-family: verdana;
-	font-size: 40px;
+	font-size: 12px;
+	min-width: 0;
 }
 
-body
-{
-	background-color: #fff;
-	margin:0 auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding : 0;
-	border : 0;
-	height: 100%;
-	width: 1500px;
-}
-
+/* Alles in de header */
 header
 {
-	/* Hier staat de h1 pagina titel in en het logo */
-	height: 15vw;
-	background-color: #701818;
-	position: relative;
-	margin: 0;
-	padding : 0;
-	border : 0;
-}
-
-nav
-{
-	position: relative;
-	display: block;
-	height: 6%;
-	width: 100%;
-	background: #333;
-}
-
-nav ul
-{
-	margin: 0;
-	padding: 0;
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-nav ul li
-{
-	margin-top: 0px;
-	padding: 0;
-	list-style-type: none;
-	display: inline-block;
-	width: 15%;
-	height: 100%;
-	text-align: center;
-}
-
-nav li a
-{
-	display: inline-block;     
-	position: relative;
-	font-size: 2.5vw;	
-	padding-top: 2vh;
-	z-index: 1;     
-	height: 64%;
-	width: 100%;
-	color: #fff;
-	text-decoration: none;
-	border-right: 2px solid #fff;
-	cursor: pointer;
-}
-
-nav li a:hover
-{
-	display: inline-block;
-	background-color: #111;
-	position: relative;
-	font-size: 2.5vw;	
-	padding-top: 2vh;
-	z-index: 1;     
-	height: 64%;
-	width: 100%;
-	color: #fff;
-	text-decoration: none;
-	border-right: 2px solid #fff;
-	cursor: pointer;
-}
-
-main
-{
-	border : 0;	
-	position: relative;
-	min-height: 85%;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-aside
-{
-	padding-top: 20px;
-}
-
-table
-{
-	border: 1px solid black;
-	margin-top: 40px;
-	width: 60%;
-	border-collapse: collapse;
-}
-
-th
-{
-	border-bottom: 2px solid black;
-	padding: 10px;
-	text-align: center;
-}
-
-td
-{
-	border-bottom: 1px solid black;
-	padding: 10px;
-	text-align: left;
-}
-
-.tr1:hover 
-{
-	/* verzorgd de kleurverandering van de onderste tabel, maar niet de bovenste met titels */
-	background-color: #f5f5f5
-}
-
-#html5img 
-{
-    height: 200px;
-    width: 200px;
-	position: absolute;
-	right: 5%;
-	bottom: 5%;
-}
-
-/* Hier onder alle formaten headers */
-
-h1
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 3em;
-}
-
-h2
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 2em;
-}
-
-h3
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 1.6em;
-}
-
-h4
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 1.4em;
-}
-
-h5
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 1.2em;
-}
-
-h6
-{
-	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 1.1em;
-}
-
-#headerh1
-{
-	position: relative;
-	text-align: center;
-	padding-top: 1vw;
-	margin: 0;
-	font-size: 2em;
+	height: 70px;
 }
 
 #headerimg
 {
-    height: 9vw;
-    width: 13.18vw;
-	position: absolute;
-	left: 2vw;
-	top: 2vw;
+    height: 0%;
+	min-height: 85px;
+	margin-top: -0.8%;
+	margin-left: 0.5%;
+	left:0%;
+	top: 0%;
 }
 
-#links
+/* Einde header */
+
+/* De navigatie balk */
+body>nav
 {
-	/* Dit zijn de links in de footer, pre-line verzorgd de nieuwe lijnen per link */
-	white-space: pre-line;
-	position: absolute;
-	bottom: 5%;
+	height: 25px;
+}
+
+body>nav ul
+{
+	min-height: 25px;
+}
+
+body>nav ul li
+{
+	min-width: 40px;
+	min-height: 25px;
+}
+
+body>nav li a
+{
+	font-size: 0.8em;	
+	padding-top: 8px;
+	min-height: 25px;
+	border-left: 1px solid #fff;
+}
+
+body>nav li a:hover
+{
+	background-color: #111;
 }
 
 #currentpage
 {
-	color: #fff;
-	background-color: #930;
+	border-bottom: 4px solid #930;
+}
+
+#mostleft_currentpage
+{
+	border-bottom: 4px solid #930;
+}
+/* Einde navigatie balk */
+
+
+/* De footer */
+body>footer
+{
+	height: 35px;
+	margin-top: 50px;
+}
+
+body>footer a img
+{
+	height: 50%;
+	margin-left: 3%;
+	padding-top: 3%;
+}
+
+#footerfirst
+{
+	margin-left: 3%;
+}
+
+body>footer>nav a
+{ 
+	margin-top: 12px;
+}
+
+#currentpage_footer
+{
+	border-bottom: 3px solid #930;
+}
+/* einde footer */
+
+/* Algemene opmaak */
+hr
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 p
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
 	font-size: 1em;
 }
 
@@ -238,14 +115,383 @@ em
 {
 	color: black;
 	text-align: left;
-	font-family: verdana;
-	font-size: 1em;	
+	white-space: pre-line;	
 }
 
 strong
 {
 	color: black;
-	text-align: left;
-	font-family: verdana;
-	font-size: 1em;	
+	white-space: pre-line;
+	text-align: left;	
 }
+/* Einde algemene opmaak */
+
+
+
+/* ============================================================================================================================================*/
+/* ======================================================= Specifieke layout per pagina =======================================================*/
+/* ============================================================================================================================================*/
+
+
+/* -------------------------------------------- CSS voor homepage ------------------------------------------------*/
+#introimg
+{
+	vertical-align: top;
+	min-width: 100%;
+	height: 10%;
+	margin: -6px 0 0 0;
+	z-index: 0;
+}
+
+#map
+{
+	vertical-align: top;
+	width: 100%;
+	height: 10%;
+	margin: 40px 0 0 0;
+	z-index: 0;
+}
+
+#map>h2
+{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: -25px;
+	font-size: 1.6em;
+}
+
+#introimg img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
+}
+
+#map img
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	z-index: 0;
+}
+
+/* Hieronder alle onderdelen voor de opmaak vd links*/
+#homelinks
+{
+	width: 90%;
+	min-width: 0;
+	height: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	
+}
+
+#homelinks>h2
+{
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 1.6em;
+}
+
+/* Homepage pagina links featured container */
+#topleft, #topright, #bottomleft, #bottomright
+{
+	margin: 0;
+	width: 100%;
+	height: 30%;
+	min-height: 0px;
+	min-width: 0px;
+	margin-top: 20px;
+	float: none;
+	
+}
+
+#homelinks *
+{
+	text-decoration: none;
+}
+/* ----------------------------------------------- Home pagina einde --------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor detail pagina ------------------------------------------------*/
+.contentbox
+{
+	width: 93%;
+	margin-top: 30px;
+	overflow: auto;
+}
+
+.contentbox>h2
+{
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+	clear: none;
+	float: left;
+	font-size: 1.4em;
+}
+
+.contentbox>aside
+{
+	width: 100%;
+}
+
+.contentbox>aside>img:first-child
+{
+	margin: 0;
+}
+
+#contenthoreca>h2, #contenttedoen>h2, #contentsport>h2, #contentbereikbaar>h2
+{
+	text-align: center;
+	margin-bottom: -30px;
+	margin-top: 20px;
+}
+
+.contentbox>p
+{
+	width: 100%;
+	min-width: 0px;
+	clear: none;
+}
+
+.contentbox a
+{
+	line-height: 20px;
+	padding: 0 5px 0 5px;
+	height: 20px;
+	margin-top: 10px;
+}
+
+.contentbox.reversed
+{
+	display: flex;
+    flex-direction: column;
+}
+
+.contentbox.reversed>h2
+{
+	order: 1;
+}
+
+.contentbox.reversed>p
+{
+	order: 2;
+}
+
+.contentbox.reversed>aside
+{
+	float: none;
+	margin-right: 0%;
+	order: 3;
+}
+
+#contenthoreca table
+{
+	width: 95%;
+	min-width: 0px;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+#contenthoreca table th
+{
+	padding-bottom: 10px;
+}
+
+#contenthoreca table td:first-child
+{
+	width: 80%;
+}
+
+#contenthoreca table a
+{
+	margin-top: 5px;
+	height: 15px;
+	line-height: 15px;
+}
+
+/* ----------------------------------------------- Detail pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor contact pagina ------------------------------------------------*/
+#contactform>h2
+{
+	padding-top: 40px;
+}
+
+form
+{
+	margin-top: 40px;
+	width: 95%;
+}
+
+#sendbutton
+{
+	width: 30%;
+	height: 45px;
+	margin-top: 20px;
+	margin-left: 35%;
+	border: 4px solid #930;
+}
+
+/* de radio buttons */
+.radioin span>label
+{
+	cursor: pointer;
+	margin-left: 25px;
+}
+/* einde radio buttons */
+
+/* de invoervelden */
+form>label .inputsmall
+{
+	width: 60%;
+}
+
+form>label .inputnormal
+{
+	width: 60%;
+}
+
+form>label .inputlarge
+{
+	width: 60%;
+}
+
+#onderwerpbox
+{
+	margin-top: 40px;
+}
+
+#contactsucces
+{
+	width: 100%;
+	height: 800px;
+}
+
+#contactsucces>span
+{
+	width: 58%;
+	height: 15%;
+	margin-left: 20%;
+	padding-top: 4%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* einde invoervelden */
+
+/* ----------------------------------------------- Contact pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor about pagina ------------------------------------------------*/
+#aboutpage>article>h2
+{
+	padding-top: 40px;
+}
+
+#aboutpage>article
+{
+	width: 90%;
+}
+
+#aboutpage>article>section
+{
+	position: relative;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+#aboutpage>article>section>h3, #aboutpage>article>section>p
+{
+	clear: right;
+}
+
+#aboutpage>article>section>aside
+{
+	margin: -10px;
+}
+
+#aboutpage h4
+{
+	margin-top: 20px;
+	margin-bottom: 2px;
+	font-size: 1.2em;
+}
+
+.aboutimg
+{
+	width: 100%;
+}
+
+.aboutimg1
+{
+	width: 60%;
+}
+
+#aboutpage>article nav a
+{
+	margin-top: 30px;
+	line-height: 20px;
+	padding: 0 10px 0 10px;
+	height: 20px;
+}
+/* ----------------------------------------------- About pagina einde ------------------------------------------------*/
+
+
+/* -------------------------------------------- CSS voor bronnen pagina ------------------------------------------------*/
+#goback
+{
+	margin-top: 30px;
+	line-height: 20px;
+	padding: 0 10px 0 10px;
+	height: 20px;
+}
+
+#bronnenpage>article>h2
+{
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
+#bronnenpage>article
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#bronnenpage>article>section
+{
+	position: relative;
+	margin-left: 10%;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#bronnenpage table, #bronnenpage table td, #bronnenpage table th
+{
+	border: 1px solid #000;
+}
+
+#bronnenpage table th
+{
+	background-color: #ccc;
+}
+
+#bronnenpage table
+{
+	margin-top: 80px;
+	margin-bottom: 20%;
+	width: 100%;
+}
+/* ----------------------------------------------- Bronnen pagina einde ------------------------------------------------*/
